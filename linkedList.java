@@ -48,4 +48,28 @@ class linkedList<DataType>
                 count++;
             }
     }
+    public void addAtEnd(DataType val)
+    {
+        Node <DataType> current=head;
+        Node <DataType> newNode=new Node <DataType>();
+        newNode.info=val;
+        newNode.link=null;
+
+        if(isEmpty())
+            {
+                head=newNode;
+                tail=newNode;
+                count++;
+            }
+        else
+            {
+                while(current.link!=null)
+                    {
+                        current=current.link;
+                    }
+                current.link=newNode;
+                tail=newNode;
+                count++;
+            }
+    }
 }
