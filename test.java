@@ -11,6 +11,8 @@ public class test
             potato.addAtIndex(11, 0);
             potato.addAtIndex(7, 3);
             potato.addAtIndex(99, 5);
+            potato.addBeforeIndex(69, 5);
+            potato.addAfterIndex(77, 6);
             potato.display();
         }
 }

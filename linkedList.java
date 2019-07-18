@@ -108,4 +108,12 @@ class linkedList<DataType>
                 count++;
             }
     }
+    public void addBeforeIndex(DataType val, int index)
+    {
+        addAtIndex(val, index-1);
+    }
+    public void addAfterIndex(DataType val, int index)
+    {
+        addAtIndex(val, index+1);
+    }
 }
